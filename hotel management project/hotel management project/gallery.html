@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Luxury Stay Experience</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0e0904;
+      color: #000;
+    }
+    .navbar {
+      background-color: #171717;
+      padding: 10px 30px;
+    }
+
+    .navbar-brand img {
+      height: 70px; 
+      width: 100px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffffff;
+      font-weight: 500;
+      margin: 0 25px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #d4af37;
+    }
+
+    .navbar-toggler {
+      background-color: #ffffff;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .text-section {
+      padding: 30px 10px 10px;
+      text-align: left;
+    }
+    .text-section h4 {
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .text-section h1 {
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    .text-section p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .highlight {
+      font-weight: bold;
+    }
+    .footer {
+    background:#171717;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer div {
+    margin: 1em;
+  }
+  </style>
+</head>
+<body>
+    <section class="header">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.png" alt="Landmark Logo">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms & Tariffs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Facilities</a></li>
+          <li class="nav-item"><a class="nav-link" href="local.html">Local Attraction</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+  <div class="container">
+    <div class="image-grid">
+      <!-- Replace the src attributes with your own hosted image links -->
+      <img src="assets/hotell.jpg" alt="Lobby" />
+      <img src="assets/deluxe.jpeg" alt="Seating Area" />
+      <img src="assets/double.jpeg" alt="Lounge" />
+      <img src="assets/family.jpeg" alt="Lounge" />
+      <img src="assets/food.jpg" alt="Lounge" />
+      <img src="assets/hotel.jpg" alt="Reception" />
+      <img src="assets/junior.jpeg" alt="Bedroom" />
+      <img src="assets/reception.jpg" alt="Suite" />
+      <img src="assets/room1.jpg" alt="Suite Lounge" />
+      <img src="assets/room2.jpg" alt="Suite Lounge" />
+      <img src="assets/triple.jpeg" alt="Entrance" />
+      <img src="assets/vision.jpg" alt="Room" />
+      <img src="assets/mission.jpg" alt="Meeting Area" />
+      <img src="assets/triple.jpeg" alt="Lobby View" />
+      <img src="assets/double.jpeg" alt="Lounge" />
+      <img src="assets/family.jpeg" alt="Pool View" />
+      <img src="assets/room1.jpg" alt="Exterior Pool" />
+      <img src="assets/reception.jpg" alt="Pool Side" />
+    </div>
+    <div class="text-section">
+      <h4>Innovative Management Solutions</h4>
+      <h1>Elevating Hospitality Standards for Every Guest</h1>
+      <p>
+        Our focus is on delivering <span class="highlight">excellence in service</span> and ensuring
+        guest satisfaction at all times.
+      </p>
+    </div>
+    </div>
+    <div class="footer">
+        <footer id="contact" class="footer">
+      <div>
+        <h4>Hotel Landmark</h4>
+        <p>Link road, Gadchiroli<br>Maharashtra</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p>About Us<br>Room Facilities<br>Amenities<br>Sights & region to visit</p>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>Email: hotellandmark@gmail.com<br>Phone: 11223344422</p>
+        <p>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </p>
+      </div>
+    </div>
+
+</body>
+</html>

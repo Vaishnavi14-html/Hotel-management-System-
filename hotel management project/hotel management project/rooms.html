@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+
+    <title>Facilities | Hotel Comfort</title>
+  <!-- <link rel="stylesheet" href="rooms.css">-->
+</head>
+<style>
+    body { margin: 0;
+       font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color:#f9f9f9; }
+    
+      
+    .navbar {
+      background-color: #171717;
+      padding: 10px 30px;
+      
+    }
+
+    .navbar-brand img {
+      height: 70px; 
+      width: 100px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffffff;
+      font-weight: 500;
+      margin: 0 25px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #d4af37;
+    }
+
+    .navbar-toggler {
+      background-color: #ffffff;
+    }
+  
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    }
+
+
+.room-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.room-section h1 {
+    margin-bottom: 30px;
+    
+    color: #003366;
+
+    
+}
+
+.container{
+    display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.room-card {
+      background-color:#9f9c9c;
+    
+    border-radius: 30px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+
+}
+
+
+
+.room-card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.room-card h3 {
+    margin: 15px 0 10px;
+    color:#003366;
+    
+}
+
+.room-card p {
+    padding: 0 15px 20px;
+    font-size: 16px;
+    color:#171616;
+}
+.price-booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-booking button{
+    background-color:#003366;
+    color: #f9f9f9;
+    border-radius: 40px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.price-booking p{
+    color:#003366;
+    margin: 10px;
+    font-weight: bold;
+    
+}
+.footer {
+    background:#171717;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer div {
+    margin: 1em;
+  }
+  </style>
+<body>
+
+    <section class="header">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.png" alt="Landmark Logo">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item"><a class="nav-link" href="homepage.html"></a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms & Tariffs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Facilities</a></li>
+          <li class="nav-item"><a class="nav-link" href="local.html">Local Attraction</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+     <!--Rooms section-->
+  <main class="room-section">
+        <h1>Our Rooms and Terrifs</h1>
+        <div class="container">
+            <div class="room-card">
+                <img src="assets/deluxe.jpeg" alt="Restaurant">
+                <h3>Deluxe room</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque convallis luctus. Nullam luctus orci eu sapien tristique auctor ac vitae eros.</p>
+                <div class="price-booking">
+                    <p>Rs.3500/Night</p>
+                <button onclick="location.href='booke.html'">Book Now</button>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="assets/family.jpeg" alt="Room Service">
+                <h3>Family suite</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque convallis luctus. Nullam luctus orci eu sapien tristique auctor ac vitae eros.</p>
+                <div class="price-booking">
+                    <p>Rs.5500/Night</p>
+                <button onclick="location.href='booke.html'">Book Now</button>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="assets/junior.jpeg" alt="Wi-Fi">
+                <h3>Junior suite</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque convallis luctus. Nullam luctus orci eu sapien tristique auctor ac vitae eros.</p>
+                <div class="price-booking">
+                    <p>Rs.4500/Night</p>
+                <button onclick="location.href='booke.html'">Book Now</button>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="assets/single.jpeg" alt="Parking">
+                <h3>Single Room</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque convallis luctus. Nullam luctus orci eu sapien tristique auctor ac vitae eros.</p>
+                <div class="price-booking">
+                    <p>Rs.2500/Night</p>
+                <button onclick="location.href='booke.html'">Book Now</button>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="assets/double.jpeg" alt="Swiming pool">
+                <h3>Standard Double Room</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque convallis luctus. Nullam luctus orci eu sapien tristique auctor ac vitae eros.</p>
+                <div class="price-booking">
+                    <p>Rs.3600/Night</p>
+                <button onclick="location.href='booke.html'">Book Now</button>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="assets/triple.jpeg" alt="Gym">
+                <h3>Triple Room</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque convallis luctus. Nullam luctus orci eu sapien tristique auctor ac vitae eros.</p>
+                <div class="price-booking">
+                    <p>Rs.4000/Night</p>
+                <button onclick="location.href='booke.html'">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+       <!--Footer Section-->
+    <footer id="contact" class="footer">
+      <div>
+        <h4>Hotel Landmark</h4>
+        <p>Link road, Gadchiroli<br>Maharashtra</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p>About Us<br>Room Facilities<br>Amenities<br>Sights & region to visit</p>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>Email: hotellandmark@gmail.com<br>Phone: 11223344422</p>
+        <p>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </p>
+      </div>
+
+</body>
+</html>

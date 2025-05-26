@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hotel Landmark - Blog</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f8;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #000000;
+    }
+    
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      width: 100%;
+    }
+    .page-title {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #000000;
+      letter-spacing: 1.5px;
+    }
+    .video-container {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .blog-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+      gap: 2rem;
+    }
+    article.blog-post {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgb(0 0 0 / 0.1);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+    article.blog-post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgb(0 0 0 / 0.15);
+    }
+    .blog-post img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 4px solid #000000;
+    }
+    .blog-content {
+      padding: 1rem 1.5rem 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #000000;
+      font-weight: 700;
+    }
+    .blog-date {
+      font-size: 0.85rem;
+      color: #6b7a7c;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    .blog-excerpt {
+      flex: 1;
+      font-size: 1rem;
+      color: #4a4a4a;
+      margin-bottom: 1rem;
+    }
+    .read-more {
+      align-self: flex-start;
+      background: #000000;
+      color: white;
+      padding: 0.5rem 1.1rem;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      border: none;
+    }
+    .read-more:hover {
+      background: #000000;
+    }
+    
+
+    /* Responsive typography */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .page-title {
+        font-size: 1.8rem;
+      }
+      .blog-post img {
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+
+    </header>
+  
+  <main>
+    <h2 class="page-title">Our Hotel Blog</h2>
+    <section class="blog-list" aria-label="Blog Posts">
+      <article class="blog-post">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Relaxing hotel pool surrounded by palm trees" />
+        <div class="blog-content">
+          <h3 class="blog-title">Top 5 Relaxing Poolside Spots at Hotel Paradise</h3>
+          <time class="blog-date" datetime="2025-06-10">June 10, 2025</time>
+          <p class="blog-excerpt">Discover the most serene and exclusive poolside lounges perfect for unwinding during your stay. Experience ultimate relaxation with tropical views and refreshing drinks.</p>
+          <button class="read-more" aria-expanded="false" aria-controls="post1-content" onclick="togglePost('post1')">Read More</button>
+          <div id="post1-content" hidden>
+            <p>Our hotel offers five distinct pool areas, each with its own vibe and specialties. Whether you want a quiet nap under the palms, a lively swim with friends, or a Jacuzzi soak with sunset views, we have it all. Plus, our poolside bar serves signature cocktails made with fresh local ingredients.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80" alt="Chef preparing gourmet meal in hotel restaurant kitchen" />
+        <div class="blog-content">
+          <h3 class="blog-title">A Culinary Journey: Meet Our Executive Chef</h3>
+          <time class="blog-date" datetime="2025-05-25">May 25, 2025</time>
+          <p class="blog-excerpt">Get to know the talented mastermind behind our restaurant's innovative menus, blending local flavors with international cuisine for a unique dining experience.</p>
+          <button class="read-more" aria-expanded="false" aria-controls="post2-content" onclick="togglePost('post2')">Read More</button>
+          <div id="post2-content" hidden>
+            <p>Chef Maria brings over 20 years of culinary expertise from around the globe. Her passion is crafting dishes that tell a story while using only the freshest local produce. Join her for special cooking classes hosted monthly in our kitchen.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="Couple enjoying a sunset on the hotel rooftop terrace" />
+        <div class="blog-content">
+          <h3 class="blog-title">Experience Magical Sunsets at Our Rooftop Terrace</h3>
+          <time class="blog-date" datetime="2025-05-10">May 10, 2025</time>
+          <p class="blog-excerpt">Our rooftop terrace provides a breathtaking panorama of the city skyline and ocean. Find out the best times and drinks to enjoy the ultimate sunset experience.</p>
+          <button class="read-more" aria-expanded="false" aria-controls="post3-content" onclick="togglePost('post3')">Read More</button>
+          <div id="post3-content" hidden>
+            <p>The terrace is open year-round with cozy fire pits and comfortable lounges. Try our signature sunset cocktail as you watch the sky turn shades of orange and pink. Perfect for romantic evenings or friendly gatherings.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  
+  <script>
+    function togglePost(postId) {
+      const content = document.getElementById(postId + '-content');
+      const button = content.previousElementSibling;
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      if (expanded) {
+        content.hidden = true;
+        button.setAttribute('aria-expanded', 'false');
+        button.textContent = 'Read More';
+      } else {
+        content.hidden = false;
+        button.setAttribute('aria-expanded', 'true');
+        button.textContent = 'Read Less';
+      }
+    }
+  </script>
+</body>
+</html>
