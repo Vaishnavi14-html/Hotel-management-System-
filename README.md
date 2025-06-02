@@ -1,2 +1,2 @@
-# Hotel-management-System-
-Hotel Management System
+# Hotel-Landmark-Website
+Hotel Landmark Website
